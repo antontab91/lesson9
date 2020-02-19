@@ -8,6 +8,10 @@
         integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         .header {
             background-color: darkturquoise;
             height: 40px;
@@ -17,20 +21,31 @@
         }
 
         .header .nvigation {
-            height: 40px;
+            height: 100%;
+            margin: 0;
+
         }
 
         .header .nav-list {
             margin: 0;
-            padding: 11px;
-            height: 40px;
+            height: 100%;
+            /* padding: 0; */
         }
 
         .header .nav-item {
+            padding: 11px 0;
             margin-left: 16px;
             float: left;
             color: white;
             list-style-type: none;
+        }
+
+        .header .nav-item:nth-child(2) {
+            margin-left: 21px
+        }
+
+        .header .nav-item:nth-child(3) {
+            margin-left: 21px
         }
 
         .content {
